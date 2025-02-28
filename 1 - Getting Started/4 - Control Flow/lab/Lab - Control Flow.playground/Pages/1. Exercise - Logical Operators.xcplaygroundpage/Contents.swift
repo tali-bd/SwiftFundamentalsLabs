@@ -50,6 +50,6 @@
 /*:
  9. `!true`
  */
-
+print("test")
 
 //: page 1 of 9  |  [Next: Exercise - If and If-Else Statements](@next)
