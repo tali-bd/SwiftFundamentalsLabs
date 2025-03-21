@@ -47,7 +47,7 @@ func progressUpdate()
     }
     else if(steps < Int(Double(goal) * 0.9))
     {
-        print("You're almost halfway there!")
+        print("You're over halfway there!")
     }
     else if(steps < goal)
     {
