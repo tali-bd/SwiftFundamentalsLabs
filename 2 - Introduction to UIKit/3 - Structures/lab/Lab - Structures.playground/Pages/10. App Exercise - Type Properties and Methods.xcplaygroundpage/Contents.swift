@@ -13,11 +13,25 @@ struct RunningWorkout {
     var distance: Double
     var time: Double
     var elevation: Double
+    
+    
+    // to establish as type property, NEEDS to have static
+    static var meterInFeet: Double = 3.28084 //ex of type property
+    static var mileInMeters: Double = 1600  //type properties can be called on struct itself, does not need individual instance in order to be called
+    
+    static func mileTimeFor(distancePassed: Double, timePassed: Double)->Double
+    {
+        return((distancePassed/1600) / timePassed)
+    }
 }
+
+
+print("Your mile time should be \(RunningWorkout.mileTimeFor(distancePassed: 3200, timePassed: 40)) per hour")
 /*:
  It may be helpful to have a few type properties on `RunningWorkout` representing unit conversions (i.e. meters to mile, feet to meters, etc.). Go back and add a type property for `meterInFeet` and assign it 3.28084. Then add a type property for `mileInMeters` and assign it 1600.0. Print both of these values below.
  */
-
+print(RunningWorkout.meterInFeet)
+print(RunningWorkout.mileInMeters)
 
 /*:
 
