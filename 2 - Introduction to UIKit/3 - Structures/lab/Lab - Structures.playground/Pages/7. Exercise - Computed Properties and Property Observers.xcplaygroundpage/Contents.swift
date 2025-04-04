@@ -62,9 +62,9 @@ struct Height {
 //When initializing variable for the first time, init() is called, var at top is ignored, because it is considered a function. Will not be called until call to function is made. This means inches and centimeters will be initialized as 0.0 each
 
 var testHeight = Height(heightInInches: 0.0)
-print(testHeight.heightInInches)  //Still not a call to the function I guess? Instead acts as a getter
+print(testHeight.heightInInches)  //Acts as a getter
 
 //When setting new value to
-testHeight.heightInInches = 60.2   // Now, because resetting values, not being initialized, and goes through struct functions instead.
+testHeight.heightInInches = 60.2   // Goes through both init and struct functions
 print(testHeight.heightInCentimeters)
 //: [Previous](@previous)  |  page 7 of 10  |  [Next: App Exercise - Mile Times and Congratulations](@next)

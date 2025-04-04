@@ -7,7 +7,15 @@ class Spaceship {
     let name: String
     var health: Int
     var position: Int
-
+    
+    init(name: String, health: Int, position: Int)
+    {
+        self.name = name
+        self.health = health
+        self.position = position
+    }
+    
+  
     func moveLeft() {
         position -= 1
     }
@@ -27,7 +35,20 @@ class Spaceship {
 class Fighter: Spaceship {
     let weapon: String
     var remainingFirePower: Int
+    
+    init(weapon: String, remainingFirePower: Int)
+    {
+        self.weapon = weapon
+        self.remainingFirePower = remainingFirePower
+        
+        //LEFT OFF HERE --- FIGURING OUT HOW TO MEMBERWISE INITIALIZE FOR SUPERCLASS
+        //super.init(name: self.name, health: self.health, position: self.position)
+        
+        
+    }
+    
 
+    
     func fire() {
         if remainingFirePower > 0 {
             remainingFirePower -= 1
@@ -39,6 +60,11 @@ class Fighter: Spaceship {
 
 class ShieldedShip: Fighter {
     var shieldStrength: Int
+    
+    init(shieldStrength: Int)
+    {
+        self.shieldStrength = shieldStrength
+    }
 
     override func wasHit() {
         if shieldStrength > 0 {
