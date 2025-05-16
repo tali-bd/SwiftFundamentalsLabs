@@ -43,14 +43,19 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         let options: ARSession.RunOptions
             
+        print("Remove anchors value: \(removeAnchors)")
+        
             if removeAnchors {
                 options = [.removeExistingAnchors]
                 for node in planeNodes {
                     node.removeFromParentNode()
+                    
                 }
                 planeNodes.removeAll()
                 for node in placedNodes {
                     node.removeFromParentNode()
+                    
+                    print("Node: \(node), parent: \(String(describing: node.parent))")
                 }
                 placedNodes.removeAll()
             } else {
@@ -86,16 +91,12 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             
             addNodeInFront(node)
             
-            placedNodes.append(node); print("node should be added to array")
-            
-            
         case .plane:
             
             //print("In plane case")
             
             let touchPoint = touch.location(in: sceneView)
             addNode(node, toPlaneUsingPoint: touchPoint)
-            placedNodes.append(node) ; print("node should be added to array")
             
         case .image:
             
@@ -160,6 +161,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         let cloneNode = node.clone()
         sceneView.scene.rootNode.addChildNode(cloneNode)
+        placedNodes.append(cloneNode)
     }
     
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
@@ -199,6 +201,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let cloneNode = node.clone()
         parentNode.addChildNode(cloneNode)
         
+        placedNodes.append(cloneNode)
+        
     }
     
     func addNode(_ node:SCNNode, toPlaneUsingPoint point: CGPoint)
@@ -212,6 +216,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 
                 let cloneNode = node.clone()
                 sceneView.scene.rootNode.addChildNode(cloneNode)
+                placedNodes.append(cloneNode)
                 
                 lastObjectPlacedPoint = point
                 
