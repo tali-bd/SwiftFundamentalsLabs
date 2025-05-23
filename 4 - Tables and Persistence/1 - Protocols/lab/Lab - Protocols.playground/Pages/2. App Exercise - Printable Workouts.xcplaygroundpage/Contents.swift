@@ -5,7 +5,7 @@
  
  The `Workout` objects you have created so far in app exercises don't show a whole lot of useful information when printed to the console. They also aren't very easy to compare or sort. Throughout these exercises, you'll make the `Workout` class below adopt certain protocols that will solve these issues.
  */
-class Workout: CustomStringConvertible, Equatable {
+class Workout: CustomStringConvertible, Equatable, Codable {
     var distance: Double
     var time: Double
     var identifier: Int
@@ -66,5 +66,10 @@ for work in sortedWorkouts{
  */
 import Foundation
 
+let jsonEncoder = JSONEncoder()
+if let jsonData = try? jsonEncoder.encode(workout5),
+    let jsonString = String(data: jsonData, encoding: .utf8) {
+    print(jsonString)
+}
 
 //: [Previous](@previous)  |  page 2 of 5  |  [Next: Exercise - Create a Protocol](@next)
