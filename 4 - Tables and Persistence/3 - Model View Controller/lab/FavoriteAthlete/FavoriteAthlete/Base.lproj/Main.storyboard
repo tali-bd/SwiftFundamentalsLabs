@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DEB-Fq-qNA">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DEB-Fq-qNA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,14 +18,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AthleteCell" textLabel="DXh-m4-x3s" detailTextLabel="PJJ-Kl-qUA" style="IBUITableViewCellStyleSubtitle" id="Hrh-6s-dZ3">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="50" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hrh-6s-dZ3" id="LKm-OR-z1x">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DXh-m4-x3s">
-                                            <rect key="frame" x="20" y="5" width="33.5" height="20.5"/>
+                                            <rect key="frame" x="20" y="5" width="33" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -70,7 +68,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DEB-Fq-qNA" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="RZf-jc-XA7">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -91,48 +89,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who is your favorite athlete?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2W-fv-3ts">
-                                <rect key="frame" x="98.5" y="113" width="217.5" height="20.5"/>
+                                <rect key="frame" x="99" y="117" width="216" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UPG-oj-W9q">
-                                <rect key="frame" x="50" y="187" width="314" height="150"/>
+                                <rect key="frame" x="50" y="191" width="314" height="166"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U3J-R0-1jS">
-                                        <rect key="frame" x="0.0" y="0.0" width="314" height="30"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6DH-j1-SLF">
-                                        <rect key="frame" x="0.0" y="40" width="314" height="30"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="44" width="314" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Leage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aap-hH-FNd">
-                                        <rect key="frame" x="0.0" y="80" width="314" height="30"/>
-                                        <nil key="textColor"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="League" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aap-hH-FNd">
+                                        <rect key="frame" x="0.0" y="88" width="314" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Team" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rKE-v9-NBr">
-                                        <rect key="frame" x="0.0" y="120" width="314" height="30"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="132" width="314" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLp-zu-XLk">
-                                <rect key="frame" x="190" y="369" width="34" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLp-zu-XLk">
+                                <rect key="frame" x="190" y="389" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
+                                    <action selector="saveAction:" destination="8K9-2q-IXD" eventType="touchUpInside" id="ptY-Jt-RfP"/>
                                     <action selector="saveButtonTapped:" destination="8K9-2q-IXD" eventType="touchUpInside" id="hY9-aI-8LA"/>
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="vVB-Zq-kHj"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="MLp-zu-XLk" firstAttribute="top" secondItem="UPG-oj-W9q" secondAttribute="bottom" constant="32" id="7dO-S4-ALp"/>
@@ -143,15 +139,14 @@
                             <constraint firstAttribute="trailingMargin" secondItem="UPG-oj-W9q" secondAttribute="trailing" constant="30" id="WjZ-t1-PNK"/>
                             <constraint firstItem="UPG-oj-W9q" firstAttribute="top" secondItem="g2W-fv-3ts" secondAttribute="bottom" constant="53.5" id="zWT-Du-RPd"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="vVB-Zq-kHj"/>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="V1y-YK-nLQ"/>
                     <connections>
-                        <outlet property="ageTextField" destination="6DH-j1-SLF" id="6Y9-re-8DD"/>
-                        <outlet property="leagueTextField" destination="Aap-hH-FNd" id="NAj-bV-GJQ"/>
-                        <outlet property="nameTextField" destination="U3J-R0-1jS" id="WV2-Wc-aLC"/>
-                        <outlet property="teamTextField" destination="rKE-v9-NBr" id="MJO-gY-cwo"/>
-                        <segue destination="wFc-3q-vwq" kind="unwind" identifier="UnwindToAthleteTable" unwindAction="prepareForUnwindWithSegue:" id="HPS-Df-mzT"/>
+                        <outlet property="ageTextField" destination="6DH-j1-SLF" id="2Jr-ky-rI1"/>
+                        <outlet property="leagueTextField" destination="Aap-hH-FNd" id="9oo-Tv-98t"/>
+                        <outlet property="nameTextField" destination="U3J-R0-1jS" id="Nza-93-bO6"/>
+                        <outlet property="teamTextField" destination="rKE-v9-NBr" id="UsE-bg-HPX"/>
+                        <segue destination="wFc-3q-vwq" kind="unwind" unwindAction="unwindToAthleteTableViewWithSegue:" id="VL0-qg-jPi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MrL-ji-oiy" sceneMemberID="firstResponder"/>
@@ -161,6 +156,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="zao-5I-OB3"/>
+        <segue reference="jne-Px-TqC"/>
     </inferredMetricsTieBreakers>
 </document>

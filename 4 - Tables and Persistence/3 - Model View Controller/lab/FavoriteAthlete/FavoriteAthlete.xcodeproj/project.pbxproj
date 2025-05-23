@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		542E8AEC2DE124A3002728A8 /* Athlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E8AEB2DE124A3002728A8 /* Athlete.swift */; };
+		542E8AEE2DE1253A002728A8 /* AthleteFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E8AED2DE1253A002728A8 /* AthleteFormViewController.swift */; };
 		A94375AE1E4648230053B419 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94375AD1E4648230053B419 /* AppDelegate.swift */; };
 		A94375B31E4648230053B419 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94375B11E4648230053B419 /* Main.storyboard */; };
 		A94375B51E4648230053B419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A94375B41E4648230053B419 /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		542E8AEB2DE124A3002728A8 /* Athlete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Athlete.swift; sourceTree = "<group>"; };
+		542E8AED2DE1253A002728A8 /* AthleteFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteFormViewController.swift; sourceTree = "<group>"; };
 		A94375AA1E4648230053B419 /* FavoriteAthlete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavoriteAthlete.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94375AD1E4648230053B419 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A94375B21E4648230053B419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 			children = (
 				A94375AD1E4648230053B419 /* AppDelegate.swift */,
 				A94375B11E4648230053B419 /* Main.storyboard */,
+				542E8AEB2DE124A3002728A8 /* Athlete.swift */,
+				542E8AED2DE1253A002728A8 /* AthleteFormViewController.swift */,
 				A9FE274E1E4A8F0E00F01A14 /* AthleteTableViewController.swift */,
 				A94375B41E4648230053B419 /* Assets.xcassets */,
 				A94375B61E4648230053B419 /* LaunchScreen.storyboard */,
@@ -105,6 +111,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -136,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				542E8AEE2DE1253A002728A8 /* AthleteFormViewController.swift in Sources */,
 				A9FE274F1E4A8F0E00F01A14 /* AthleteTableViewController.swift in Sources */,
+				542E8AEC2DE124A3002728A8 /* Athlete.swift in Sources */,
 				A94375AE1E4648230053B419 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
